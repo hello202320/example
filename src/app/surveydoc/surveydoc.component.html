@@ -1,0 +1,5 @@
+<div *ngFor="let question of questions">
+    <app-base-question [questionId]="question.id" (delete)="deleteQuestion(question.id)"></app-base-question>
+  </div>
+  <button (click)="addQuestion()">Add Question</button>
+  
